@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+ 
+int main()
+{ 
+    float term1,term2=0;float x,y;
+    for (float n = 5.0,m = 3.0; n,m<=1999.0; n=n+4.0 , m=m+4.0)
+    {
+        float a,b; 
+        a = (1.0/n);
+        b = (1.0/m);
+        term1 += a;
+        term2 += b;    
+    }
+       float Leibniz_Expression;
+        Leibniz_Expression = 4 * (1 - (term2 - term1));
+        cout<<Leibniz_Expression<<endl;
+}
+        
+        
